@@ -11,7 +11,35 @@
 		<h1 id="swift">Swift</h1>
 		<h1 id="uikit">UIKit</h1>
 		<h1 id="swiftui">SwiftUI</h1>
-		<h1 id="coredata">Core Data</h1>
+			<p> SwiftUI is another UI Framework  (like UIKit) released in 2019 </p>
+			<p> Some issues with SwiftUI are… </p>
+			<ul> 
+				<li> It is newer than UIKit so there is less documentation </li>
+				<li> Doesn’t work on older computers & operating systems </li>
+				<li> Doesn’t include Storyboard </li>
+			</ul>
+
+			<p> Some pros of  SwiftUI are… </p>
+			<ul> 
+				<li> Very easy to see and edit your code </li>
+				<li> User friendly  </li>
+				<li> Declarative Framework </li>
+			</ul>
+
+			<h1 id="coredata">Core Data</h1>
+			<p> CoreData works with Swift to manage your app’s database through a Persistent Container Class. An instance of this Persistence Container Class allows access to three other classes that work with your apps data in different ways. </p>
+			<p> The three other classes are: </p>
+			<ul> 
+				<li> NsManagedObjectModel: an instance of this class describes your app’s types, properties and relationships </li>
+				<ul> 
+					<li> For a Fontbook, there is a class named "font". Each instance of the class "font" has the attributes name (which is font name) and isFavorited (which is whether something is favorited or not). This type of relationship is very easy to create with Core Data</li>
+					<li> For a Contact List, each person is a class and their information like name, number, and email is an attribute. With typical variables, you would make make a String for name... but this method of storing data does not preserve the relationship between people and the people's attributes. This is why Core Data is helpful! </li> 
+</li>
+				</ul>
+				<li> NsManagedObjectContext: an instance of this class tracks changes to instances of your app’s types </li>
+				<li> NsPersistentStoreCoordinator saves and fetches instances of your app's type </li>
+			</ul>
+
 	
 	</body>
 </html>
