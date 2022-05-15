@@ -1,0 +1,45 @@
+* { border-box: none; margin: 0; }
+body { padding: 20px 30px; }
+
+@font-face {
+    font-family: Megrim;
+    src: url("Megrim-Regular.ttf");
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url("Comfortaa-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: Menlo;
+    src: url("Menlo Regular.ttf");
+}
+
+h1 { font-family: Megrim; text-transform: uppercase; }
+h2 { font-family: Megrim; text-transform: uppercase; }
+p { font-family: Comfortaa; }
+
+.codeblock {
+    background-color: #313131;
+    padding: 10px; margin: 10px 0;
+    border-radius: 10px;
+}
+
+.codeline {
+    display: flex;
+    flex-direction: row;
+}
+
+.tab-0 { margin-left: 30px; }
+.tab-1 { margin-left: 60px; }
+
+.white { color: white; margin-right: 6px; font-family: Menlo; }
+.pink { color: rgb(238, 129, 176); font-weight: bold; margin-right: 6px; font-family: Menlo; }
+.lightblue { color: rgb(137, 220, 251); margin-right: 6px; font-family: Menlo; }
+.blue { color: rgb(105, 174, 200); margin-right: 6px; font-family: Menlo; }
+.lightgreen { color: rgb(188, 240, 228); margin-right: 6px; font-family: Menlo; }
+.green { color: rgb(137, 192, 180); margin-right: 6px; font-family: Menlo; }
+.lightpurple { color: rgb(214, 188, 250); margin-right: 6px; font-family: Menlo; }
+.purple { color: rgba(170, 131, 229); margin-right: 6px; font-family: Menlo; }
+.yellow { color: rgba(215, 202, 134); margin-right: 6px; font-family: Menlo; }
