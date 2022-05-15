@@ -9,6 +9,101 @@
 	<body>
 	
 		<h1 id="swift">Swift</h1>
+            <p>Swift is a multi-paradigm (object-oriented, imperative, declarative, etc.) programming language created by Apple in 2014 to develop native iOS apps.<p>
+            
+            <h2>Basic Swift Syntax</h2>
+            <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+                <div class="codeblock" style="flex-grow: 1;">
+                    <div class="codeline" onclick="showExplanation0()">
+                        <p class="pink">class</p>
+                        <p class="lightblue">Student</p>
+                        <p class="white">:</p>
+                        <p class="lightgreen">Person</p>
+                        <p class="white">{</p>
+                    </div>
+                    <div class="codeline tab-0" onclick="showExplanation1()">
+                        <p class="pink">let</p>
+                        <p class="blue">name</p>
+                        <p class="white">:</p>
+                        <p class="lightpurple">String</p>
+                    </div>
+                    <div class="codeline tab-0" onclick="showExplanation2()">
+                        <p class="pink">private var</p>
+                        <p class="blue">age</p>
+                        <p class="white">:</p>
+                        <p class="lightpurple">Int</p>
+                    </div>
+                    <div class="codeline tab-0">
+                        <p class="pink">var</p>
+                        <p class="blue">osis</p>
+                        <p class="white">:</p>
+                        <p class="lightpurple" style="margin: 0;">Int</p>
+                        <p class="white">?</p>
+                    </div>
+                    <br>
+                    <div class="codeline tab-0">
+                        <p class="pink" style="margin: 0;">init</p>
+                        <p class="white" style="margin: 0;">(</p>
+                        <p class="blue">name</p>
+                        <p class="white">:</p>
+                        <p class="lightpurple" style="margin: 0;">String</p>
+                        <p class="white">,</p><br>
+                        <p class="blue">age</p>
+                        <p class="white">:</p>
+                        <p class="lightpurple" style="margin: 0;">Int</p>
+                        <p class="white" style="margin: 0;">?</p><br>
+                        <p class="white">,</p><br>
+                        <p class="blue">osis</p>
+                        <p class="white">:</p>
+                        <p class="lightpurple" style="margin: 0;">Int</p>
+                        <p class="white" style="margin: 0;">?</p><br>
+                        <p class="white">)</p><br>
+                        <p class="white">{</p><br>
+                    </div>
+                    <div class="codeline tab-1">
+                        <p class="pink" style="margin: 0;">self</p>
+                        <p class="white" style="margin: 0;">.</p>
+                        <p class="green">name</p>
+                        <p class="white">= name</p>
+                    </div>
+                    <div class="codeline tab-1">
+                        <p class="pink" style="margin: 0;">self</p>
+                        <p class="white" style="margin: 0;">.</p>
+                        <p class="green">age</p>
+                        <p class="white">= age ??</p>
+                        <p class="yellow">17</p>
+                    </div>
+                    <div class="codeline tab-1">
+                        <p class="pink" style="margin: 0;">self</p>
+                        <p class="white" style="margin: 0;">.</p>
+                        <p class="green">osis</p>
+                        <p class="white">= osis</p>
+                    </div>
+                    <div class="codeline tab-0"><p class="white">}</p></div>
+                    <br>
+                    <div class="codeline tab-0">
+                        <p class="pink">func</p>
+                        <p class="blue" style="margin: 0;">increaseAge</p>
+                        <p class="white">() -></p>
+                        <p class="lightpurple">Int</p>
+                        <p class="white">{</p>
+                    </div>
+                    <div class="codeline tab-1">
+                        <p class="green">age</p>
+                        <p class="white">+= 1</p>
+                    </div>
+                    <div class="codeline tab-1">
+                        <p class="pink">return</p>
+                        <p class="green">age</p>
+                    </div>
+                    <div class="codeline tab-0"><p class="white">}</p></div>
+                    <div class="codeline"><p class="white">}</p></div>
+                </div>
+                <div style="min-width: 300px; background-color: darkgrey; padding: 20px; flex-grow: 1;">
+                    <p id="explanation">Click on a line to get an explanation!</p>
+                </div>
+            </div>
+            
 		<h1 id="uikit">UIKit</h1>
 		<h1 id="swiftui">SwiftUI</h1>
 			<p> SwiftUI is another UI Framework  (like UIKit) released in 2019 </p>
@@ -39,7 +134,29 @@
 				<li> NsPersistentStoreCoordinator saves and fetches instances of your app's type </li>
 			</ul>
 
-	
+        <script>
+            let explanation = document.getElementById("explanation");
+            function showExplanation0() {
+                explanation.innerHTML = "The [class] keyword is used to declare a custom class.\
+                <br>\"Student\" is the name of the class, and \"Person\" is the name of its parent.\
+                <br>In Swift, objects can inherit from any number of parents and protocols.";
+            }
+            
+            function showExplanation1() {
+                explanation.innerHTML = "The [let] keyword is used to declare a constant variable.\
+                <br>The colon is used to denote the type of the variable. You must \
+                declare a type if you do not assign the value right away/if the type of value\
+                is ambiguous.";
+            }
+            
+            function showExplanation2() {
+                explanation.innerHTML = "The [var] keyword is used to declare a changing variable.\
+                While the app will still build (compile) even if you declare a constant with [var],\
+                Xcode will show an in-line recommendation to change it to [let] if the value\
+                never changes. <br>Like in Java, the [private] keyword makes the \
+                variable inaccessible from outside the class.";
+            }
+        </script>
 	</body>
 </html>
 
