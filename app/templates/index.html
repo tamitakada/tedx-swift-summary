@@ -8,11 +8,11 @@
 
 	<body>
 	
-		<h1 id="swift">Swift</h1>
+		<h1 id="swift" style="margin-bottom: 20px;">Swift</h1>
             <p>Swift is a multi-paradigm (object-oriented, imperative, declarative, etc.) programming language created by Apple in 2014 to develop native iOS apps.<p>
             
-            <h2>Basic Swift Syntax</h2>
-            <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+            <h2 style="margin: 10px 0;">Basic Swift Syntax</h2>
+            <div style="display: flex; flex-direction: column;">
                 <div class="codeblock" style="flex-grow: 1;">
                     <div class="codeline" onclick="showExplanation0()">
                         <p class="pink">class</p>
@@ -33,7 +33,7 @@
                         <p class="white">:</p>
                         <p class="lightpurple">Int</p>
                     </div>
-                    <div class="codeline tab-0">
+                    <div class="codeline tab-0" onclick="showExplanation3()">
                         <p class="pink">var</p>
                         <p class="blue">osis</p>
                         <p class="white">:</p>
@@ -41,7 +41,7 @@
                         <p class="white">?</p>
                     </div>
                     <br>
-                    <div class="codeline tab-0">
+                    <div class="codeline tab-0" onclick="showExplanation4()">
                         <p class="pink" style="margin: 0;">init</p>
                         <p class="white" style="margin: 0;">(</p>
                         <p class="blue">name</p>
@@ -60,52 +60,103 @@
                         <p class="white">)</p><br>
                         <p class="white">{</p><br>
                     </div>
-                    <div class="codeline tab-1">
+                    <div class="codeline tab-1" onclick="showExplanation4()">
                         <p class="pink" style="margin: 0;">self</p>
                         <p class="white" style="margin: 0;">.</p>
                         <p class="green">name</p>
                         <p class="white">= name</p>
                     </div>
-                    <div class="codeline tab-1">
+                    <div class="codeline tab-1" onclick="showExplanation5()">
                         <p class="pink" style="margin: 0;">self</p>
                         <p class="white" style="margin: 0;">.</p>
                         <p class="green">age</p>
                         <p class="white">= age ??</p>
                         <p class="yellow">17</p>
                     </div>
-                    <div class="codeline tab-1">
+                    <div class="codeline tab-1" onclick="showExplanation4()">
                         <p class="pink" style="margin: 0;">self</p>
                         <p class="white" style="margin: 0;">.</p>
                         <p class="green">osis</p>
                         <p class="white">= osis</p>
                     </div>
-                    <div class="codeline tab-0"><p class="white">}</p></div>
+                    <div class="codeline tab-0" onclick="showExplanation4()"><p class="white">}</p></div>
                     <br>
-                    <div class="codeline tab-0">
+                    <div class="codeline tab-0" onclick="showExplanation6()">
                         <p class="pink">func</p>
                         <p class="blue" style="margin: 0;">increaseAge</p>
                         <p class="white">() -></p>
                         <p class="lightpurple">Int</p>
                         <p class="white">{</p>
                     </div>
-                    <div class="codeline tab-1">
+                    <div class="codeline tab-1" onclick="showExplanation6()">
                         <p class="green">age</p>
                         <p class="white">+= 1</p>
                     </div>
-                    <div class="codeline tab-1">
+                    <div class="codeline tab-1" onclick="showExplanation6()">
                         <p class="pink">return</p>
                         <p class="green">age</p>
                     </div>
-                    <div class="codeline tab-0"><p class="white">}</p></div>
+                    <div class="codeline tab-0" onclick="showExplanation6()"><p class="white">}</p></div>
                     <div class="codeline"><p class="white">}</p></div>
                 </div>
-                <div style="min-width: 300px; background-color: darkgrey; padding: 20px; flex-grow: 1;">
-                    <p id="explanation">Click on a line to get an explanation!</p>
+                <div style="background-color: #555555; padding: 20px; border-radius: 10px;">
+                    <p id="explanation" style="color: white;">Click on a line to get an explanation!</p>
                 </div>
             </div>
             
-		<h1 id="uikit">UIKit</h1>
-		<h1 id="swiftui">SwiftUI</h1>
+            <h2 style="margin: 10px 0;">Pros of Swift</h2>
+            <ul>
+                <li>Similar to Java but with many good parts of Python</li>
+                <li>Multiple inheritance</li>
+                <li>Extensions</li>
+                <li>Optionals</li>
+            </ul>
+
+            <h2 style="margin: 10px 0;">Cons of Swift</h2>
+            <ul>
+                <li>Not cross-platform</li>
+                <li>No iPhone only option</li>
+                <li>You're basically forced to download Xcode (IDE that takes up a ton of space)</li>
+                <li>Costs $100/year to publish/keep an app on the AppStore</li>
+            </ul>
+            
+		<h1 id="uikit" style="margin: 20px 0;">UIKit</h1>
+            <p>UIKit is one framework used with Swift to build a user interface. It works
+             using a system called <b>auto layout</b>, which is a way to position items
+             by saying where each of their anchors are placed with respect to other items.</p>
+            <div style="display: flex; flex-direction: row; gap: 10px; margin: 10px 0; flex-wrap: wrap;">
+                <img style="max-width: 300px; width: 100%; border-radius: 10px;" src="{{ url_for('static', filename='anchors-diagram.png') }}"></img>
+                <div style="display: flex; flex-direction: column; padding: 20px; background-color: powderblue; border-radius: 10px;">
+                    <p style="color: black;">Each view has six anchors that it can be positioned with. Four of those
+                    anchors are the four sides, while two are the two center lines.</p>
+                    <p style="margin-top: 10px; color: black;"><i>Here's an example:</i></p>
+                    <div class="codeblock">
+                        <div class="codeline">
+                            <p class="pink">let</p>
+                            <p class="white">b = </p>
+                            <p class="lightpurple">UIButton</p>
+                            <p class="white">()</p>
+                            <p class="comment">// Creates button</p>
+                        </div>
+                        <div class="codeline">
+                            <p class="lightpurple">view.addSubview</p>
+                            <p class="white">(b)</p>
+                            <p class="comment">// Adds as a child view</p>
+                        </div>
+                        <div class="codeline">
+                            <p class="pink">let</p>
+                            <p class="white">b.</p>
+                            <p class="lightpurple">translatesAutoresizingMaskIntoConstraints</p>
+                            <p class="white"> = </p>
+                            <p class="pink">false</p>
+                            <p class="comment">// Turns off auto positioning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+		<h1 id="swiftui" style="margin: 20px 0;">SwiftUI</h1>
 			<p> SwiftUI is another UI Framework  (like UIKit) released in 2019 </p>
 			<p> Some issues with SwiftUI are… </p>
 			<ul> 
@@ -121,17 +172,17 @@
 				<li> Declarative Framework </li>
 			</ul>
 
-		<h1 id="coredata">Core Data</h1>
+		<h1 id="coredata" style="margin: 20px 0;">Core Data</h1>
 			<p> CoreData works with Swift to manage your app’s database through a Persistent Container Class. An instance of this Persistence Container Class allows access to three other classes that work with your apps data in different ways. </p>
 			<p> The three other classes are: </p>
 			<ul> 
-				<li> NsManagedObjectModel: an instance of this class describes your app’s types, properties and relationships </li>
+				<li> NSManagedObjectModel: an instance of this class describes your app’s types, properties and relationships </li>
 				<ul> 
 					<li> For a Fontbook, there is a class named "font". Each instance of the class "font" has the attributes name (which is font name) and isFavorited (which is whether something is favorited or not). This type of relationship is very easy to create with Core Data</li>
 					<li> For a Contact List, each person is a class and their information like name, number, and email is an attribute. With typical variables, you would make make a String for name... but this method of storing data does not preserve the relationship between people and the people's attributes. This is why Core Data is helpful! </li> 
 				</ul>
-				<li> NsManagedObjectContext: an instance of this class tracks changes to instances of your app’s types </li>
-				<li> NsPersistentStoreCoordinator saves and fetches instances of your app's type </li>
+				<li> NSManagedObjectContext: an instance of this class tracks changes to instances of your app’s types </li>
+				<li> NSPersistentStoreCoordinator saves and fetches instances of your app's type </li>
 			</ul>
 
         <script>
@@ -155,6 +206,34 @@
                 Xcode will show an in-line recommendation to change it to [let] if the value\
                 never changes. <br>Like in Java, the [private] keyword makes the \
                 variable inaccessible from outside the class.";
+            }
+            
+            function showExplanation3() {
+                explanation.innerHTML = "In Swift, you can declare optional variables by \
+                placing a question mark after the variable type. \
+                Optionals are variables that can be either nil or a value of the specified type.";
+            }
+            
+            function showExplanation4() {
+                explanation.innerHTML = "Class constructors are declared with the keyword \
+                [init]. The code won't build if you don't initialize all non-optional values \
+                in the constructor. You can name your parameters the same thing as the properties \
+                that you're assigning by differentiating between the two with the [self] (like \
+                [this] in Java) keyword. self.propertyName will be understood to refer to the \
+                property, while without the self, the variable will be understood as the \
+                parameter name.";
+            }
+            
+            function showExplanation5() {
+                explanation.innerHTML = "You can set a default value for an optional with \
+                the [??]. The age parameter is an optional, so if it is nil, the default \
+                value will be 17, since it is written after the [??].";
+            }
+            
+            function showExplanation6() {
+                explanation.innerHTML = "Functions are declared with the [func] keyword \
+                followed by the name and a parameter list in parentheses. Parameters must \
+                by typed. Finally, the return type must be listed with the syntax [-> type].";
             }
         </script>
 	</body>
