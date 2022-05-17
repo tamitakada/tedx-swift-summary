@@ -31,6 +31,7 @@ li { font-family: Comfortaa; margin: 5px 0; color: white; }
 .codeline {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .tab-0 { margin-left: 30px; }

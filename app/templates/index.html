@@ -145,11 +145,45 @@
                         </div>
                         <div class="codeline">
                             <p class="pink">let</p>
-                            <p class="white">b.</p>
+                            <p class="white" style="margin: 0;">b.</p>
                             <p class="lightpurple">translatesAutoresizingMaskIntoConstraints</p>
                             <p class="white"> = </p>
                             <p class="pink">false</p>
                             <p class="comment">// Turns off auto positioning</p>
+                        </div>
+                        <div class="codeline">
+                            <p class="white" style="margin: 0;">b.</p>
+                            <p class="lightpurple" style="margin: 0;">leadingAnchor</p>
+                            <p class="white" style="margin: 0;">.</p>
+                            <p class="lightpurple" style="margin: 0;">constraint</p>
+                            <p class="white" style="margin: 0;">(</p>
+                            <p class="lightpurple">equalTo</p>
+                            <p class="white">:</p>
+                            <p class="lightpurple">view.leadingAnchor</p>
+                            <p class="white">,</p>
+                            <p class="lightpurple">constant</p>
+                            <p class="white">:</p>
+                            <p class="yellow" style="margin: 0;">30</p>
+                            <p class="white" style="margin: 0;">).</p>
+                            <p class="lightpurple">isActive</p>
+                            <p class="white">=</p>
+                            <p class="pink">true</p>
+                            <p class="comment">// Positions button's left side to be 30px away from the parent view's left side</p>
+                        </div>
+                        <div class="codeline">
+                            <p class="white" style="margin: 0;">b.</p>
+                            <p class="lightpurple" style="margin: 0;">centerYAnchor</p>
+                            <p class="white" style="margin: 0;">.</p>
+                            <p class="lightpurple" style="margin: 0;">constraint</p>
+                            <p class="white" style="margin: 0;">(</p>
+                            <p class="lightpurple">equalTo</p>
+                            <p class="white">:</p>
+                            <p class="lightpurple" style="margin: 0;">view.centerYAnchor</p>
+                            <p class="white" style="margin: 0;">).</p>
+                            <p class="lightpurple">isActive</p>
+                            <p class="white">=</p>
+                            <p class="pink">true</p>
+                            <p class="comment">// Vertically centers button</p>
                         </div>
                     </div>
                 </div>
