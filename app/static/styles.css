@@ -1,6 +1,5 @@
 * { border-box: none; margin: 0; }
 body, html { background-color: #777777; }
-body { padding: 20px 30px; }
 
 @font-face {
     font-family: Megrim;
@@ -17,10 +16,15 @@ body { padding: 20px 30px; }
     src: url("Menlo Regular.ttf");
 }
 
-h1 { font-family: Megrim; text-transform: uppercase; color: white; }
+h1 { font-family: Megrim; text-transform: uppercase; color: white; font-size: 45px; }
 h2 { font-family: Megrim; text-transform: uppercase; color: white; }
 p { font-family: Comfortaa; color: white; }
 li { font-family: Comfortaa; margin: 5px 0; color: white; }
+a {font-family:  Comfortaa; }
+
+.maincontent { 
+    padding: 20px 30px; 
+}
 
 .codeblock {
     background-color: #313131;
@@ -32,6 +36,15 @@ li { font-family: Comfortaa; margin: 5px 0; color: white; }
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+
+.footer {
+    padding: 0px; 
+    margin: 0px;
+    background-color: #313131;
+    text-align: center;
+    font-weight: bold;
 }
 
 .tab-0 { margin-left: 30px; }
@@ -47,3 +60,5 @@ li { font-family: Comfortaa; margin: 5px 0; color: white; }
 .purple { color: rgba(170, 131, 229); margin-right: 6px; font-family: Menlo; }
 .yellow { color: rgba(215, 202, 134); margin-right: 6px; font-family: Menlo; }
 .comment { color: #AAAAAA; margin-right: 6px; font-family: Menlo; }
+
+

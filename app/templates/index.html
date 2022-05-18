@@ -7,8 +7,8 @@
 	</head>
 
 	<body>
-	
-		<h1 id="swift" style="margin-bottom: 20px;">Swift</h1>
+	<div class = "maincontent"> 
+		<h1 id="swift" style="margin-bottom: 20px;">---- Swift</h1>
             <p>Swift is a multi-paradigm (object-oriented, imperative, declarative, etc.) programming language created by Apple in 2014 to develop native iOS apps.<p>
             
             <h2 style="margin: 10px 0;">Basic Swift Syntax</h2>
@@ -120,12 +120,12 @@
                 <li>Costs $100/year to publish/keep an app on the AppStore</li>
             </ul>
             
-		<h1 id="uikit" style="margin: 20px 0;">UIKit</h1>
+		<h1 id="uikit" style="margin: 20px 0;">---- UIKit</h1>
             <p>UIKit is one framework used with Swift to build a user interface. It works
              using a system called <b>auto layout</b>, which is a way to position items
              by saying where each of their anchors are placed with respect to other items.</p>
             <div style="display: flex; flex-direction: row; gap: 10px; margin: 10px 0; flex-wrap: wrap;">
-                <img style="max-width: 300px; width: 100%; border-radius: 10px;" src="{{ url_for('static', filename='anchors-diagram.png') }}"></img>
+                <img style="max-width: 300px; width: 100%; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 50%;" src="{{ url_for('static', filename='anchors-diagram.png') }}"></img> 
                 <div style="display: flex; flex-direction: column; padding: 20px; background-color: powderblue; border-radius: 10px;">
                     <p style="color: black;">Each view has six anchors that it can be positioned with. Four of those
                     anchors are the four sides, while two are the two center lines.</p>
@@ -187,12 +187,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
+        <a class = "link green" href="https://www.youtube.com/playlist?list=PLMRqhzcHGw1a9VXZJTkn9KxHzYeSRqUbQ"> Here is a link to a helpful tutorial on UIKit! </a>
+     </div>
             
             
-		<h1 id="swiftui" style="margin: 20px 0;">SwiftUI</h1>
-			<p> SwiftUI is another UI Framework  (like UIKit) released in 2019 </p>
-			<p> Some issues with SwiftUI are… </p>
+		    <h1 id="swiftui" style="margin: 20px 0;">---- SwiftUI</h1>
+			<p> SwiftUI is another UI Framework  (like UIKit) released in 2019. Some issues with SwiftUI are… </p>
 			<ul> 
 				<li> It is newer than UIKit so there is less documentation </li>
 				<li> Doesn’t work on older computers & operating systems </li>
@@ -205,10 +205,10 @@
 				<li> User friendly  </li>
 				<li> Declarative Framework </li>
 			</ul>
+            <a class = "link green" href="https://www.youtube.com/playlist?list=PLMRqhzcHGw1YqPh-ggQHJPAUxdHov_uNJ"> Here is a link to a helpful tutorial on SwiftUI! </a>
 
-		<h1 id="coredata" style="margin: 20px 0;">Core Data</h1>
-			<p> CoreData works with Swift to manage your app’s database through a Persistent Container Class. An instance of this Persistence Container Class allows access to three other classes that work with your apps data in different ways. </p>
-			<p> The three other classes are: </p>
+		<h1 id="coredata" style="margin: 20px 0;">---- Core Data</h1>
+			<p> CoreData works with Swift to manage your app’s database through a Persistent Container Class. An instance of this Persistence Container Class allows access to three other classes that work with your apps data in different ways. The three other classes are: </p>
 			<ul> 
 				<li> NSManagedObjectModel: an instance of this class describes your app’s types, properties and relationships </li>
 				<ul> 
@@ -218,8 +218,20 @@
 				<li> NSManagedObjectContext: an instance of this class tracks changes to instances of your app’s types </li>
 				<li> NSPersistentStoreCoordinator saves and fetches instances of your app's type </li>
 			</ul>
+
+        <h1 id="other" style="margin: 20px 0;">---- Other Resources</h1>
+            <a class = "link green" href="https://developer.apple.com/"> Apple Developer Website </a> 
+            <p style = "color: #777777">  ...  </p>
+            <a class = "link green" href="https://github.com/tamitakada/tedx-swift-uikit"> Fontbook Demo Code </a> 
+           </ul>
+
+        </div>
             
-            <p style="margin: 30px 0;">Copyright (c) 2022 Liesel Wong and Tami Takada</p>
+        <div class = "footer">
+            <br> 
+                <p>Copyright (c) 2022 Liesel Wong and Tami Takada</p> 
+            <br> 
+        </div>
 
         <script>
             let explanation = document.getElementById("explanation");
